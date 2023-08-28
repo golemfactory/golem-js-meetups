@@ -1,0 +1,14 @@
+{
+  "name": "golem-meetjs-slides",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "marp --server -w ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.2.1"
+  }
+}

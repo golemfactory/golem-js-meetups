@@ -1,0 +1,14 @@
+{
+  "name": "golem-meetjs-examples",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@golem-sdk/golem-js": "^0.8.3"
+  }
+}
