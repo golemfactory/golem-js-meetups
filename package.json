@@ -2,21 +2,19 @@
   "name": "golem-meetjs",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "Assets related to the Golem Network presentation on meetups and conferences",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier -w .",
-    "setup-env": "ts-node examples/src/setup-env.ts",
-    "simple-example": "ts-node examples/src/simple-example.ts"
+    "format": "prettier -w ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Grzegorz Godlewski <ggodlewski@sorcerystudio.com>",
+  "license": "MIT",
   "workspaces": [
     "examples",
     "slides"
   ],
   "dependencies": {
-    "@golem-sdk/golem-js": "file:../golem-js",
+    "@golem-sdk/golem-js": "latest",
     "dotenv": "^16.3.1",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1",

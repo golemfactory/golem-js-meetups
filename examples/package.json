@@ -2,13 +2,16 @@
   "name": "golem-meetjs-examples",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "Examples to showcase the SDK on meetups and conferences",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --build",
+    "setup-env": "node ditst/setup-env.js",
+    "example-1": "node dist/1-hello-world/requestor.js",
+    "example-2": "node dist/2-my-script/requestor.js",
+    "example-3": "node dist/3-scatter-gather/requestor.js",
+    "example-4": "node dist/4-ocr/requestor.js"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@golem-sdk/golem-js": "^0.8.3"
-  }
+  "author": "Grzegorz Godlewski <ggodlewski@sorcerystudio.com>",
+  "license": "MIT",
+  "dependencies": {}
 }
