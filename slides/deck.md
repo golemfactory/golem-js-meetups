@@ -52,7 +52,7 @@ paginate: true
 
 # Disclaimer
 
-Mówimy tutaj o tokenach ER20 (_tokenach krypto_), ale uwaga:
+Mówimy tutaj o tokenach ERC20 (_tokenach krypto_), ale uwaga:
 
 > Przekazywane w trakcie tej prezentacji informajce nie mogą być traktowane jako porada inwestycyjna lub wiążąca ocena rynku albo instrumentu inwestycyjnego.
 
@@ -90,7 +90,7 @@ Discord ➡ `#golem-projects`
 
 # User Story
 
-> As a user,
+>As a user,
 > I want to provide my unused computing power,
 > so that I can get some of that power back later
 
