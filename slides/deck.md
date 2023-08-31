@@ -2,6 +2,7 @@
 theme: default
 paginate: true
 ---
+
 <style>
    img[alt~="center"] {
    display: block;
@@ -14,18 +15,19 @@ paginate: true
 #### Rozpraszanie zadań obliczeniowych na wiele procesorów
 
 ---
+
 ![bg left:25%](assets/GGodlewski-Golem.jpg)
 
-# O mnie
+# Grzegorz Godlewski
 
-Grzegorz Godlewski
-
+- GitHub: https://github.com/grisha87
 - LinkedIn: https://www.linkedin.com/in/ggodlewski/
 - Twitter: https://twitter.com/GGodlewski
 - Discord: `ggodlewski`
 - Mail: [grzegorz@golem.network](mailto:grzegorz@golem.network)
 
 ---
+
 # Agenda
 
 - O projekcie Golem Network
@@ -34,17 +36,20 @@ Grzegorz Godlewski
 - Sesja Q&A
 
 ---
+
 # Czym jest Golem Network?
 
 > Golem **democratizes** society’s access to computing power by creating a **decentralized** platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens (GLM).
 
 ---
+
 # Czym jest Golem Network?
 
-* Jest rozwiązaniem OpenSource
-* Decentralizacja i wolność dostępu są podstawowymi wartościami
+- Jest rozwiązaniem OpenSource
+- Decentralizacja i wolność dostępu są podstawowymi wartościami
 
 ---
+
 # Disclaimer
 
 Mówimy tutaj o tokenach ER20 (_tokenach krypto_), ale uwaga:
@@ -56,6 +61,21 @@ Mówimy tutaj o tokenach ER20 (_tokenach krypto_), ale uwaga:
 ![width:900px center](assets/big-picture.png)
 
 ---
+
+# Przykładowe zastosowania
+
+- Wsadowe przetwarzanie dźwięku i obrazu
+- Praca na dużych zestawach anomizowanych, lub pseudonimizowanych danych
+
+---
+
+# Klucz do sukcesu
+
+1. Odpowiednia analiza problemu
+2. Podział na zadania, które mogą być wykonywane w współbieżnie
+
+---
+
 # Jaki jest stan projektu na dzisiaj?
 
 [https://stats.golem.network](https://stats.golem.network)
@@ -63,9 +83,11 @@ Mówimy tutaj o tokenach ER20 (_tokenach krypto_), ale uwaga:
 Discord ➡ `#golem-projects`
 
 ---
+
 # Dlaczego dla mnie?
 
 ---
+
 # User Story
 
 > As a user,
@@ -73,30 +95,43 @@ Discord ➡ `#golem-projects`
 > so that I can get some of that power back later
 
 ---
+
 # Przykład 1: Hello World
 
 ---
+
 # Przykład 2: Własny skrypt
 
 ---
+
 # Przykład 3: Scatter-gather
 
 ---
+
 # Przykład 4: Utility - konwersja obrazu na tekst
 
 ---
+
+# Przykład 5: A frontend?
+
+---
+
 # Jak to jest zrobione?
 
 ---
-![height:400px center](assets/high-level.png)
+
+![height:600px center](assets/high-level.png)
 
 ---
-![height:300px center](assets/simple-workflow.png)
+
+![height:400px center](assets/simple-workflow.png)
 
 ---
-![height:300px center](assets/payment-structure.png)
+
+![height:400px center](assets/payment-structure.png)
 
 ---
+
 # Jak zacząć jako twórca?
 
 1. Zacznij od instalacji SDK:
@@ -115,26 +150,31 @@ Discord ➡ `#golem-projects`
    SDK ➡ `#js-discussion`
 
 ---
+
 # Wybrane ograniczenia
 
-* Różna jakość providerów, fault handling i resiliency konieczne
-* Providerzy mają różnej jakości łącza internetowe
+- Różna jakość providerów, fault handling i resiliency konieczne
+- Providerzy mają różnej jakości łącza internetowe
 
 ---
+
 # Nad czym pracujemy
 
-* Dostęp do internetu z poziomu providera
-* Toolchain ułatwiający tworzenie aplikacji na Golem
-* Kanały dystrybucji: `latest`, `beta`, `alpha`
-* Polityka dotycząca zgodności wstecznej
+- Dostęp do internetu z poziomu providera
+- Toolchain ułatwiający tworzenie aplikacji na Golem
+- Kanały dystrybucji: `latest`, `beta`, `alpha`
+- Polityka dotycząca zgodności wstecznej
 
 ---
+
 # Pytania?
 
 ---
+
 # Zasoby
 
 ![width:300px center](assets/repo-qr.png)
 
 ---
+
 # Dziękuję!

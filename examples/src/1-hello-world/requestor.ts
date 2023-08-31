@@ -23,7 +23,6 @@ dotenv.config();
 
     // Control the execution of tasks
     maxTaskRetries: 0,
-    maxParallelTasks: 10,
 
     // Useful for debugging
     logLevel: LogLevel.Info,
