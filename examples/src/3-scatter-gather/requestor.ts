@@ -24,7 +24,8 @@ dotenv.config();
     },
 
     // Control the execution of tasks
-    maxTaskRetries: 0,
+    maxTaskRetries: 3,
+    maxParallelTasks: 30,
 
     // Useful for debugging
     logLevel: LogLevel.Info,
@@ -40,7 +41,7 @@ dotenv.config();
     );
 
     // Define your inputs
-    const inputs = [5, 10, 15, 20, 25, 30, 35, 40];
+    const inputs = [...Array(30).keys()];
 
     // Build the task list
     const tasks = inputs.map((input) =>
