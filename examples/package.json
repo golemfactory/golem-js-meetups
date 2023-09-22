@@ -5,6 +5,7 @@
   "description": "Examples to showcase the SDK on meetups and conferences",
   "scripts": {
     "build": "tsc --build",
+    "dev": "tsc --build --watch",
     "setup-env": "node ditst/setup-env.js",
     "example-1": "node dist/1-hello-world/requestor.js",
     "example-2": "node dist/2-my-script/requestor.js",
