@@ -90,7 +90,7 @@ Discord ➡ `#golem-projects`
 
 # User Story
 
->As a user,
+> As a user,
 > I want to provide my unused computing power,
 > so that I can get some of that power back later
 
