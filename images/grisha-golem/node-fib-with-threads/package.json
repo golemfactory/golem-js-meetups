@@ -1,0 +1,22 @@
+{
+  "name": "grisha-golem/node-fib-with-threads",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Example task running Fibonacci computations on a Provider using multiple threads",
+  "scripts": {
+    "start": "node dist",
+    "compile": "tsc --build",
+    "image:build": "docker build -t grisha-golem/node-fib-with-threads:latest .",
+    "image:publish": "gvmkit-build --push grisha-golem/node-fib-with-threads:latest"
+  },
+  "author": "Grzegorz Godlewski <ggodlewski@sorcerystudio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@golem-sdk/golem-js": "^0.11.2",
+    "dotenv": "^16.3.1",
+    "threads": "^1.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "keywords": []
+}

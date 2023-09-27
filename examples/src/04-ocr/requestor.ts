@@ -1,38 +1,20 @@
 import * as dotenv from "dotenv";
 import assert from "assert";
 import * as fs from "fs";
-import { LogLevel, ProposalFilters, TaskExecutor } from "@golem-sdk/golem-js";
+import { TaskExecutor } from "@golem-sdk/golem-js";
+import { makeConfig } from "../golem-toolkit";
 
 dotenv.config();
 
 (async function main() {
-  const executor = await TaskExecutor.create({
-    // What do you want to run
-    package: "golem/tesseract:latest",
-
-    // How much you wish to spend
-    budget: 0.5,
-    proposalFilter: ProposalFilters.limitPriceFilter({
-      start: 0.1,
-      cpuPerSec: 0.1 / 3600,
-      envPerSec: 0.1 / 3600,
-    }),
-
-    // Where you want to spend
-    payment: {
-      network: "polygon",
-    },
-
-    // Control the execution of tasks
-    maxTaskRetries: 0,
-
-    // Useful for debugging
-    logLevel: LogLevel.Info,
-    taskTimeout: 5 * 60 * 1000,
+  const config = await makeConfig({
+    image: "golem/tesseract:latest",
   });
 
+  const executor = await TaskExecutor.create(config);
+
   try {
-    const sourceImageFile = __dirname + "/../../src/4-ocr/input/portal.png";
+    const sourceImageFile = __dirname + "/../../src/04-ocr/input/portal.png";
 
     assert(
       fs.existsSync(sourceImageFile),

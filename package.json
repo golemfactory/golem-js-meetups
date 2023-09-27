@@ -5,7 +5,8 @@
   "description": "Assets related to the Golem Network presentation on meetups and conferences",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "dev": "marp --server -w ./slides/"
   },
   "author": "Grzegorz Godlewski <ggodlewski@sorcerystudio.com>",
   "license": "MIT",
@@ -14,11 +15,7 @@
     "slides"
   ],
   "dependencies": {
-    "@golem-sdk/cli": "^1.0.0",
-    "@golem-sdk/golem-js": "^0.11.2",
-    "dotenv": "^16.3.1",
-    "prettier": "^3.0.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "@marp-team/marp-cli": "^3.3.0",
+    "prettier": "^3.0.2"
   }
 }
