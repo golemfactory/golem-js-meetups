@@ -78,12 +78,6 @@ await Promise.all(tasks);
 
 ---
 
-# Question
-
-NodeJS/V8 - _Single, or multithreaded?_
-
----
-
 # Implementation 2
 
 Multi-threading with worker threads (`threads` on NPM)
