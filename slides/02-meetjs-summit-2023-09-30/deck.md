@@ -28,17 +28,6 @@ Grzegorz "Grisha" Godlewski
 
 ---
 
-# Agenda
-
-- The Problem
-- Implementation 1, 2, 3
-- About Golem Network
-- Implementation 4 and 5
-- Feel invited!
-- Q&A
-
----
-
 # The Problem
 
 - CPU demanding operations which require a lot of time to complete
@@ -65,6 +54,8 @@ export function fib(n: number): number {
 }
 ```
 
+For `n = 45` computing can take even 2-3 minutes on my machine.
+
 ---
 
 # Implementation 1
@@ -72,29 +63,28 @@ export function fib(n: number): number {
 Linear computation of every value
 
 ```typescript
+// Contains 10, 50, 100, 500, 1000 or 5000 items...
 const inputs = readInputDataSet();
 
+// One by one...
 for (const i of inputs) {
   console.log("fib(%d)=%d", i, fib(i));
 }
-```
 
----
-
-# Implementation 2
-
-Parallel computation on a single thread
-
-```typescript
-const inputs = readInputDataSet();
-
+// "Concurrently"...
 const tasks = inputs.map((input) => Promise.resolve(fib(input)));
 await Promise.all(tasks);
 ```
 
 ---
 
-# Implementation 3
+# Question
+
+NodeJS/V8 - _Single, or multithreaded?_
+
+---
+
+# Implementation 2
 
 Multi-threading with worker threads (`threads` on NPM)
 
@@ -119,7 +109,7 @@ await pool.terminate();
 
 ---
 
-# Implementation 3 (continued)
+# Implementation 2 (continued)
 
 ```typescript
 // threads/fib.worker.ts
@@ -150,7 +140,9 @@ Some well established options:
 
 # About Golem Network
 
-> Golem **democratizes** society’s access to computing power by creating a **decentralized** platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens (GLM).
+> Golem **democratizes** society’s access to computing power by creating a **decentralized** platform where anyone can
+> build a variety of applications, request computational resources and/or offer their idle systems in exchange for
+> cryptocurrency tokens (GLM).
 
 ---
 
@@ -158,7 +150,9 @@ Some well established options:
 
 ---
 
-# Implementation 4
+# Implementation 3
+
+Using `@golem-sdk/golem-js`
 
 ```typescript
 // main.ts
@@ -178,7 +172,7 @@ await executor.end();
 
 ---
 
-# Implementation 4 (continued)
+# Implementation 3 (continued)
 
 ```typescript
 export async function makeConfig({
@@ -218,7 +212,7 @@ export async function makeConfig({
 
 ---
 
-# Implementation 4 (continued)
+# Implementation 3 (continued)
 
 ```typescript
 async function computeOnGolem(executor: TaskExecutor, inputs: number[]) {
@@ -241,13 +235,13 @@ async function computeOnGolem(executor: TaskExecutor, inputs: number[]) {
 
 ---
 
-# Implementation 4 (outcome)
+# Implementation 3 (outcome)
 
-![height:600 center](assets/1k-implementation-4.png)
+![height:600 center](assets/1k-implementation-3.png)
 
 ---
 
-# Implementation 5
+# Implementation 4
 
 ```typescript
 const config = await makeConfig({
@@ -267,7 +261,7 @@ await executor.end();
 
 ---
 
-# Implementation 5 (continued)
+# Implementation 4 (continued)
 
 ```typescript
 async function computeChunksOnGolem(
@@ -294,9 +288,9 @@ async function computeChunksOnGolem(
 
 ---
 
-# Implementation 5 (outcome)
+# Implementation 4 (outcome)
 
-![height:600 center](assets/1k-implementation-5.png)
+![height:600 center](assets/1k-implementation-4.png)
 
 ---
 
@@ -326,8 +320,8 @@ npm install --save @golem-sdk/provider-health
 
 We're currently addressing the following limitations:
 
-- Internet access from the Provider is limited (*)
-- VPN and network communication with Providers or between Providers (*)
+- Internet access from the Provider is limited (\*)
+- VPN and network communication with Providers or between Providers (\*)
 - Varying quality or health of Providers (we got you covered!)
 
 # Upcoming features
@@ -335,12 +329,15 @@ We're currently addressing the following limitations:
 - React hooks for FE development
 
 ---
+
 # Resources
 
 ![width:300px center](assets/repo-qr.png)
 
 ---
+
 ![bg right:25%](assets/GGodlewski-Golem.jpg)
+
 # Thanks for listening!
 
 - GitHub: https://github.com/grisha87
@@ -348,3 +345,7 @@ We're currently addressing the following limitations:
 - Twitter: https://twitter.com/GGodlewski
 - Discord: `ggodlewski`
 - Mail: [grzegorz@golem.network](mailto:grzegorz@golem.network)
+
+---
+
+# Questions? :-)
