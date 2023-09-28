@@ -24,7 +24,7 @@ I want you to become a Creator on the Golem Network. Here are some resources to 
 ## 📚 Learning how to operate Golem and the SDK
 
 1. [Golem Handbook](https://handbook.golem.network/) - when you want to learn more about Golem and it's architecture
-2. [Quick Start for JS Developers](https://docs.golem.network/creators/javascript/quickstart/) - to get a guided introduction to the SDK
+2. [Quick Start for JS Developers](https://docs.golem.network/docs/creators/javascript/quickstarts/quickstart) - to get a guided introduction to the SDK
 3. [Code examples from our repository](https://github.com/golemfactory/golem-js/tree/master/examples) - to see how you can get things up and running
 
 ## 🆘 Getting help

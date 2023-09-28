@@ -141,7 +141,7 @@ Discord ➡ `#golem-projects`
    [https://handbook.golem.network/](https://handbook.golem.network/)
 
 3. Przeczytaj dokumentację dla developerów JS
-   [https://docs.golem.network/creators/javascript/quickstart/](https://docs.golem.network/creators/javascript/quickstart/)
+   [https://docs.golem.network/docs/creators/javascript/quickstarts/quickstart](https://docs.golem.network/docs/creators/javascript/quickstarts/quickstart)
 
 4. Zapoznaj się z przykładami w repozytorium
    [https://github.com/golemfactory/golem-js/tree/master/examples](https://github.com/golemfactory/golem-js/tree/master/examples)
