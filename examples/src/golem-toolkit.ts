@@ -1,6 +1,5 @@
 import { ExecutorOptionsMixin } from "@golem-sdk/golem-js/dist/executor";
 import { LogLevel, ProposalFilters } from "@golem-sdk/golem-js";
-import * as https from "https";
 
 const { limitPriceFilter, whiteListProposalIdsFilter } = ProposalFilters;
 
@@ -10,8 +9,7 @@ const { limitPriceFilter, whiteListProposalIdsFilter } = ProposalFilters;
 const getVerifiedProviders = async () => {
   try {
     const data = await fetch(
-      // "https://provider-health.golem.network/v1/provider-whitelist",
-      "http://localhost:8080/v1/provider-whitelist",
+      "https://provider-health.golem.network/v1/provider-whitelist",
     );
     const list: string[] = await data.json();
 
