@@ -305,11 +305,7 @@ Or start a project:
 npx @golem-sdk/cli new my-golem-app
 ```
 
-And consider using publicly available information about healthy Providers.
-
-```shell
-npm install --save @golem-sdk/provider-health
-```
+And consider using publicly available information about healthy Providers!
 
 ---
 
