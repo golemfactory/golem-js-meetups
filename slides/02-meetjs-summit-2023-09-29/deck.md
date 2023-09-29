@@ -14,7 +14,7 @@ paginate: true
 
 ## Based on Golem Network
 
-meet.js summit 2024, Wrocław
+meet.js summit 2023, Wrocław
 
 [//]: # "![bg cover](assets/GolemKVbackgroundMeets.jpg)"
 
