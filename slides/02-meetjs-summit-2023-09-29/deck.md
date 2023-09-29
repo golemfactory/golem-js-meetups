@@ -26,6 +26,9 @@ meet.js summit 2023, Wrocław
 
 Grzegorz "Grisha" Godlewski
 
+_Technical Lead_
+_JS/TS SDK Team @ Golem Factory_
+
 ---
 
 # The Problem
